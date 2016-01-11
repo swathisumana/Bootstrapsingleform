@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form design</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+
+<body background="big.png">
+    <div class="container">
+        <div class="col-xs-4">
+            <img src="logo.png" height=100px width=100px>
+        </div>
+        <div class="col-xs-4">
+            <h1>Bootstrap form</h1>
+        </div>
+        <div class="col-xs-4">
+            <h3>Username</h3>
+        </div>
+    </div>
+    <hr/>
+    <h1>Swathi sumana</h1>
+    <div class="b1">
+        <div>
+            <form role="form" class="form-horizontal" onsubmit="fnSubmit()">
+                <div class="form-group">
+                    <label for="name" class="col-md-2 control-label">Name:</label>
+                    <div class="col-md-8" id="uname">
+                        <input type="Name" class="form-control " id="name" placeholder="Enter name" oninput="fnnamevalidation()" required>
+                        <span id="n1"></span>
+                        <span class="help-block">Only letters are accepted</span>
+                    </div>
+                </div>
+                <!-- <form action="#" class="form-horizontal ">
+<div class="col-xs-12"><h2 class="col-xs-12">Form</h2></div>
+                <div class="form-group" id="nameContentID">
+                    <label class="control-label col-xs-2">Name:</label>
+                    <div  class="col-xs-9 row" id="nameDivID">
+                        <input type="text" class="form-control" id="name1" value="" aria-describedby="name1Status" placeholder="Enter Name" ></div>
+                </div> -->
+                <div class="form-group">
+                    <div class="form-inline">
+                        <label class="col-md-2 control-label" for="amt">Amount:</label>
+                        <div class="input-group col-md-8" id="uamt">
+                            <span class="input-group-addon">$</span>
+                            <input type="text" class="form-control" id="amt" oninput="fnamtvalidation()" required>
+                            <span class="input-group-addon">.00</span>
+                            <span id="a1"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="pwd">Password:</label>
+                    <div class="col-md-8" id="upwd">
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter Password" oninput="fnpwdvalidation()" required>
+                        <span id="p1"></span>
+                        <span class="help-block">Max length is 10</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="radio-inline col-md-offset-2 ">
+                        <input type="radio" name="radio" id="radio1"> savings
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="radio" id="radio2"> current
+                    </label>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="reset" class="btn btn-default btn-md">Reset</button>
+                    </div>
+                </div>
+            </form>
+            <hr/>
+            <div class="form-inline">
+                <div class="col-md-7">&#169;Copyright</div>
+                <div class="col-md-3">About</div>
+                <div class="col-md-2">ContactUs</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="form.js"></script>
+</body>
+
+</html>
